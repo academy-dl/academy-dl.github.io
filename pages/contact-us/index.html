@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link href="/common.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/static/fonts/oswald.css" />
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Каталог</title>
+</head>
+
+<body>
+    <header class="header container">
+    <a href="/" class="header__logo-link">
+        <img src="/static/images/logo.png" alt="Site logo" class="header__logo">
+    </a>
+    <nav aria-label="Навигация по сайту" class="header__nav">
+        <ul class="header__list">
+            <li class="header__item">
+                <a href="/pages/bootstrap" class="header__link">Catalog</a>
+            </li>
+            <li class="header__item">
+                <a href="/pages/test-page" class="header__link">Servises</a>
+            </li>
+            <li class="header__item">
+                <a href="#" class="header__link">Blog</a>
+            </li>
+            <li class="header__item">
+                <a href="#" class="header__link">About us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <a href="tel:7194319698" class="header__phone">719-431-9698</a>
+    <a href="/pages/contact-us" class="button header__link-contact">CONTACT US</a>
+    <button class="header__mobile-button header__mobile-button_js"><div class="header__mobile-icon"></div><div class="header__mobile-icon"></div><div class="header__mobile-icon"></div></button>
+
+    <div class="mobile-header mobile-header_js mobile-header">
+        <div class="mobile-header__content">
+            <div class="mobile-header__wraper">
+                <a href="/" class="mobile-header__logo-link">
+                    <img src="/static/images/logo.png" alt="Site logo" class="mobile-header__logo">
+                </a>
+                <nav aria-label="Навигация по сайту" class="mobile-header__nav">
+                    <ul class="mobile-header__list">
+                        <li class="mobile-header__item">
+                            <a href="#" class="mobile-header__link">Catalog</a>
+                        </li>
+                        <li class="mobile-header__item">
+                            <a href="#" class="mobile-header__link">Servises</a>
+                        </li>
+                        <li class="mobile-header__item">
+                            <a href="#" class="mobile-header__link">Blog</a>
+                        </li>
+                        <li class="mobile-header__item">
+                            <a href="#" class="mobile-header__link">About us</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div>
+                    <a href="tel:7194319698" class="mobile-header__phone">719-431-9698</a>
+                    <a href="/pages/contact-us" class="button mobile-header__link-contact">CONTACT US</a>
+                </div>
+            </div>
+        </div>
+        <button class="mobile-header__close-button mobile-header__close-button_js">X</button>
+    </div>
+</header>
+    <main class="container contact-us">
+        <h1 class="contact-us__title">Contact Us</h1>
+        <form class="contact-us__form">
+
+            <div class="row row_two">
+                <div class="row__col">
+                    <label class="form__label" for="name">Name</label>
+                    <input class="form__input" type="text" placeholder="Ivan Ivanov" id="name">
+                </div>
+
+                <div class="row__col">
+                    <label class="form__label" for="phone">Phone</label>
+                    <input class="form__input" type="text" id="phone">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="row__col">
+                    <label class="form__label" for="email">Email</label>
+                    <input class="form__input" type="email" id="email">
+                </div>
+            </div>
+
+            <div class="form__group">
+                <p class="form__group-title">Payment Methods</p>
+
+                <div class="form__group-list">
+                    <div class="radio">
+                        <input class="radio__input visibility-hidden" type="checkbox" id="cash">
+                        <label class="radio__label" for="cash">Cash</label>
+                    </div>
+
+                    <div class="radio">
+                        <input class="radio__input visibility-hidden" type="checkbox" id="credit-cart">
+                        <label class="radio__label" for="credit-cart">Сredit Сard</label>
+                    </div>
+
+                    <div class="radio">
+                        <input class="radio__input visibility-hidden" type="checkbox" id="receipt" disabled>
+                        <label class="radio__label" for="receipt">Receipt</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="row__col">
+                    <label class="form__label" for="city-of-birth">City of Birth</label>
+                    <input class="form__input" type="text" id="city-of-birth">
+                </div>
+            </div>
+
+            <div class="inputs-group">
+                <p class="inputs-group-title">Do you need a report on the services provided?</p>
+
+                <div class="form__radio-list">
+                    <div class="radio">
+                        <input class="radio__input visibility-hidden" type="radio" id="is-report-yes" name="report"
+                            checked>
+                        <label class="radio__label radio__label_circle" for="is-report-yes">Yes</label>
+                    </div>
+
+                    <div class="radio">
+                        <input class="radio__input visibility-hidden" type="radio" id="is-report-no" name="report">
+                        <label class="radio__label radio__label_circle" for="is-report-no">No</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="row__col">
+                    <label class="form__label" for="message">Message</label>
+                    <textarea class="form__input" id="message"></textarea>    
+                </div>
+            </div>
+
+            <button class="button contact-us-page-button">SUBMIT</button>
+        </form>
+    </main>
+    <article class="map">
+  <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9ae122262730693738ceb59b36e4c1501e75c201cf7884230b9b64784987b892&amp;source=constructor" class="map__google" frameborder="0"></iframe>
+    <div class="container">
+      <div class="map__contacts">
+        <h2 class="map__title">Chem-Dry</h2>
+        <p class="map__address">9420 Cedar CT, Thornton, CO 80229</p>
+        <a class="map__phone" href="tel:7206059399">(720) 605-9399</a>
+        <div class="map__link-wrapper">
+          <a href="#" class="button button_purpure map__link">LEARN MORE</a>
+        </div>
+      </div>
+    </div>
+</article>
+    <footer class="footer">
+  <div class="footer__inner container">
+      <section class="social-networks">
+          <h2 class="social-networks__title">Subscribe To Our Social Networks</h2>
+          <ul class="social-networks__list">
+              <li class="social-networks__item">
+                  <a href="#" class="social-networks__link facebook">
+                      <span class="visibility-hidden">Follow to facebook</span>
+                  </a>
+              </li>
+              <li class="social-networks__item">
+                  <a href="#" class="social-networks__link twitter">
+                      <span class="visibility-hidden">Follow to twitter</span>
+                  </a>
+              </li>
+              <li class="social-networks__item">
+                  <a href="#" class="social-networks__link google">
+                      <span class="visibility-hidden">Follow to google</span>
+                  </a>
+              </li>
+              <li class="social-networks__item">
+                  <a href="#" class="social-networks__link linkedin">
+                      <span class="visibility-hidden">Follow to linkedin</span>
+                  </a>
+              </li>
+              <li class="social-networks__item">
+                  <a href="#" class="social-networks__link youtube">
+                      <span class="visibility-hidden">Follow to youtube</span>
+                  </a>
+              </li>
+          </ul>
+      </section>
+  </div>
+</footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

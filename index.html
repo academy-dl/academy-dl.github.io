@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link href="/common.css" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/fonts/oswald.css" />
+  <link rel="stylesheet" href="/static/fonts/stylesheet.css" />
+  <link rel="shortcut icon" href="/static/images/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Главная</title>
+</head>
+
+<body>
+  <header class="header container">
+    <a href="/" class="header__logo-link">
+        <img src="/static/images/logo.png" alt="Site logo" class="header__logo">
+    </a>
+    <nav aria-label="Навигация по сайту" class="header__nav">
+        <ul class="header__list">
+            <li class="header__item">
+                <a href="/pages/bootstrap" class="header__link">Catalog</a>
+            </li>
+            <li class="header__item">
+                <a href="/pages/test-page" class="header__link">Servises</a>
+            </li>
+            <li class="header__item">
+                <a href="#" class="header__link">Blog</a>
+            </li>
+            <li class="header__item">
+                <a href="#" class="header__link">About us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <a href="tel:7194319698" class="header__phone">719-431-9698</a>
+    <a href="/pages/contact-us" class="button header__link-contact">CONTACT US</a>
+    <button class="header__mobile-button header__mobile-button_js"><div class="header__mobile-icon"></div><div class="header__mobile-icon"></div><div class="header__mobile-icon"></div></button>
+
+    <div class="mobile-header mobile-header_js mobile-header">
+        <div class="mobile-header__content">
+            <div class="mobile-header__wraper">
+                <a href="/" class="mobile-header__logo-link">
+                    <img src="/static/images/logo.png" alt="Site logo" class="mobile-header__logo">
+                </a>
+                <nav aria-label="Навигация по сайту" class="mobile-header__nav">
+                    <ul class="mobile-header__list">
+                        <li class="mobile-header__item">
+                            <a href="#" class="mobile-header__link">Catalog</a>
+                        </li>
+                        <li class="mobile-header__item">
+                            <a href="#" class="mobile-header__link">Servises</a>
+                        </li>
+                        <li class="mobile-header__item">
+                            <a href="#" class="mobile-header__link">Blog</a>
+                        </li>
+                        <li class="mobile-header__item">
+                            <a href="#" class="mobile-header__link">About us</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div>
+                    <a href="tel:7194319698" class="mobile-header__phone">719-431-9698</a>
+                    <a href="/pages/contact-us" class="button mobile-header__link-contact">CONTACT US</a>
+                </div>
+            </div>
+        </div>
+        <button class="mobile-header__close-button mobile-header__close-button_js">X</button>
+    </div>
+</header>
+  <main>
+    <section class="about">
+      <div class="about__inner container">
+        <h1 class="about__title">The world’s leading cleaning company</h1>
+        <button class="button button_purpure button_big about__button about__button_js">GET A FREE ESTIMATE</button>
+      </div>
+    </section>
+
+    <section aria-label="Services list" class="services container">
+      <h2 class="services__title">OUR MOST POPULAR SERVICES</h2>
+      <ul class="row">
+        <li class="col-6 col-md-3">
+          <div class="services-card">
+  <div class="services-card__img-wrapper">
+    <picture>
+      <source srcset="/static/images/services/1-mobile.jpg, /static/images/services/1-mobile-2x.jpg 2x"
+        media="(max-width: 526px)">
+      <source srcset="/static/images/services/1-tablet.jpg, /static/images/services/1-tablet-2x.jpg 2x"
+        media="(max-width: 768px)">
+      <img class="services-card__img" src="/static/images/services/1.jpg?123123"
+        srcset="/static/images/services/1.jpg?123123, /static/images/services/1-2x.jpg?123123 2x" alt="Main image">
+    </picture>
+  </div>
+  <h3 class="services-card__title">123123213123213213123213213 21 321 321 3213213</h3>
+  <p class="services-card__description">text texttext text text text</p>
+  <a href="#" class="button services-card__link">LEARN MORE</a>
+</div>
+        </li>
+        <li class="col-6 col-md-3">
+          <div class="services-card">
+  <div class="services-card__img-wrapper">
+    <picture>
+      <source srcset="/static/images/services/1-mobile.jpg, /static/images/services/1-mobile-2x.jpg 2x"
+        media="(max-width: 526px)">
+      <source srcset="/static/images/services/1-tablet.jpg, /static/images/services/1-tablet-2x.jpg 2x"
+        media="(max-width: 768px)">
+      <img class="services-card__img" src="/static/images/services/1.jpg?123123"
+        srcset="/static/images/services/1.jpg?123123, /static/images/services/1-2x.jpg?123123 2x" alt="Main image">
+    </picture>
+  </div>
+  <h3 class="services-card__title">123 21 321 321 3213213</h3>
+  <p class="services-card__description">text texttext text text text</p>
+  <a href="#" class="button services-card__link">LEARN MORE</a>
+</div>
+        </li>
+        <li class="col-6 col-md-3">
+          <div class="services-card">
+  <div class="services-card__img-wrapper">
+    <picture>
+      <source srcset="/static/images/services/1-mobile.jpg, /static/images/services/1-mobile-2x.jpg 2x"
+        media="(max-width: 526px)">
+      <source srcset="/static/images/services/1-tablet.jpg, /static/images/services/1-tablet-2x.jpg 2x"
+        media="(max-width: 768px)">
+      <img class="services-card__img" src="/static/images/services/1.jpg?123123"
+        srcset="/static/images/services/1.jpg?123123, /static/images/services/1-2x.jpg?123123 2x" alt="Main image">
+    </picture>
+  </div>
+  <h3 class="services-card__title">123 21 321 321 3213213</h3>
+  <p class="services-card__description">text texttext text text text</p>
+  <a href="#" class="button services-card__link">LEARN MORE</a>
+</div>
+        </li>
+        <li class="col-6 col-md-3">
+          <div class="services-card">
+  <div class="services-card__img-wrapper">
+    <picture>
+      <source srcset="/static/images/services/1-mobile.jpg, /static/images/services/1-mobile-2x.jpg 2x"
+        media="(max-width: 526px)">
+      <source srcset="/static/images/services/1-tablet.jpg, /static/images/services/1-tablet-2x.jpg 2x"
+        media="(max-width: 768px)">
+      <img class="services-card__img" src="/static/images/services/1.jpg?123123"
+        srcset="/static/images/services/1.jpg?123123, /static/images/services/1-2x.jpg?123123 2x" alt="Main image">
+    </picture>
+  </div>
+  <h3 class="services-card__title">123 21 321 321 3213213</h3>
+  <p class="services-card__description">text texttext text text text</p>
+  <a href="#" class="button services-card__link">LEARN MORE</a>
+</div>
+        </li>
+      </ul>
+    </section>
+
+    <article class="why-us container">
+      <div class="why-us__content">
+        <h2 class="why-us__title">Why Haley’s Chem-Dry?</h2>
+        <p class="why-us__description">Chem-Dry’s mission is helping people live healthy lives, which
+          starts
+          with clean carpets and a healthy
+          home. Our proprietary hot carbonating extraction cleaning process penetrates deep into the fibers,
+          removing an average of 98% of common household allergens from carpets, upholstery and rugs and 89%
+          of
+          the airborne bacteria in your home when a sanitizer is added.* Plus, our green-certified solution,
+          The
+          Natural®, contains no soaps or detergents so it’s safe and non-toxic for your family and pets.</p>
+          <a class="button why-us__link">LEARN MORE</a>
+      </div>
+      <div class="why-us__image-wrapper">
+        <picture>
+          <source srcset="/static/images/why-us-mobile.jpg, /static/images/why-us-mobile-2x.jpg 2x"
+            media="(max-width: 768px)">
+          <source srcset="/static/images/why-us-tablet.jpg, /static/images/why-us-tablet-2x.jpg 2x"
+            media="(max-width: 1024px)">
+          <img class="why-us__image" src="/static/images/why-us.jpg"
+            srcset="/static/images/why-us.jpg, /static/images/why-us-2x.jpg 2x" alt="Main image" alt="Why us image">
+        </picture>
+      </div>
+    </article>
+
+    <section class="partners container">
+      <h2 class="partners__title visibility-hidden">Pertners</h2>
+      <ul class="partners__list">
+        <li class="partner">
+          <a href="#" class="partner__link">
+            <span class="visibility-hidden">Follow to partner</span>
+            <img class="partner__img" src="/static/images/partners/1.png" alt="Partners image">
+          </a>
+        </li>
+        <li class="partner">
+          <a href="#" class="partner__link">
+            <span class="visibility-hidden">Follow to partner</span>
+            <img class="partner__img" src="/static/images/partners/2.png" alt="Partners image">
+          </a>
+        </li>
+        <li class="partner">
+          <a href="#" class="partner__link">
+            <span class="visibility-hidden">Follow to partner</span>
+            <img class="partner__img" src="/static/images/partners/3.png" alt="Partners image">
+          </a>
+        </li>
+        <li class="partner">
+          <a href="#" class="partner__link">
+            <span class="visibility-hidden">Follow to partner</span>
+            <img class="partner__img" src="/static/images/partners/4.png" alt="Partners image">
+          </a>
+        </li>
+        <li class="partner">
+          <a href="#" class="partner__link">
+            <span class="visibility-hidden">Follow to partner</span>
+            <img class="partner__img" src="/static/images/partners/5.png" alt="Partners image">
+          </a>
+        </li>
+        <li class="partner">
+          <a href="#" class="partner__link">
+            <span class="visibility-hidden">Follow to partner</span>
+            <img class="partner__img" src="/static/images/partners/6.png" alt="Partners image">
+          </a>
+        </li>
+        <li class="partner">
+          <a href="#" class="partner__link">
+            <span class="visibility-hidden">Follow to partner</span>
+            <img class="partner__img" src="/static/images/partners/7.png" alt="Partners image">
+          </a>
+        </li>
+        <li class="partner">
+          <a href="#" class="partner__link">
+            <span class="visibility-hidden">Follow to partner</span>
+            <img class="partner__img" src="/static/images/partners/8.png" alt="Partners image">
+          </a>
+        </li>
+        <li class="partner">
+          <a href="#" class="partner__link">
+            <span class="visibility-hidden">Follow to partner</span>
+            <img class="partner__img" src="/static/images/partners/9.png" alt="Partners image">
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+  
+  <footer class="footer">
+  <div class="footer__inner container">
+      <section class="social-networks">
+          <h2 class="social-networks__title">Subscribe To Our Social Networks</h2>
+          <ul class="social-networks__list">
+              <li class="social-networks__item">
+                  <a href="#" class="social-networks__link facebook">
+                      <span class="visibility-hidden">Follow to facebook</span>
+                  </a>
+              </li>
+              <li class="social-networks__item">
+                  <a href="#" class="social-networks__link twitter">
+                      <span class="visibility-hidden">Follow to twitter</span>
+                  </a>
+              </li>
+              <li class="social-networks__item">
+                  <a href="#" class="social-networks__link google">
+                      <span class="visibility-hidden">Follow to google</span>
+                  </a>
+              </li>
+              <li class="social-networks__item">
+                  <a href="#" class="social-networks__link linkedin">
+                      <span class="visibility-hidden">Follow to linkedin</span>
+                  </a>
+              </li>
+              <li class="social-networks__item">
+                  <a href="#" class="social-networks__link youtube">
+                      <span class="visibility-hidden">Follow to youtube</span>
+                  </a>
+              </li>
+          </ul>
+      </section>
+  </div>
+</footer>
+  <div class="popup">
+    <form class="form form_mini">
+      <button type="button" class="popup__button-close popup-form-button-close_js">
+        <span class="visibility-hidden">Popup close button</span>
+      </button>
+      <div class="row row_two">
+        <div class="row__column">
+          <label class="form__label" for="name">Name</label>
+          <input class="form__input" type="text" placeholder="Ivan Ivanov" id="name">
+        </div>
+
+        <div class="row__column">
+          <label class="form__label" for="phone">Phone</label>
+          <input class="form__input" type="text" id="phone">
+        </div>
+      </div>
+
+      <div class="row">
+        <div>
+          <label class="form__label" for="email">Email</label>
+          <input class="form__input" type="email" id="email">
+        </div>
+      </div>
+
+      <div class="row">
+        <div>
+          <label class="form__label" for="message">Message</label>
+          <textarea class="form__textarea" id="message"></textarea>
+        </div>
+     </div>
+
+      <button class="button form__button-submit">SUBMIT</button>
+    </form>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+
+</html>
